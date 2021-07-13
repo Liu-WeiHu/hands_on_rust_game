@@ -19,7 +19,7 @@ impl Map {
         }
     }
 
-    pub fn render(&self, ctx: &mut BTerm, camera: &Camera) {
+    /*pub fn render(&self, ctx: &mut BTerm, camera: &Camera) {
         ctx.set_active_console(0);
         for y in camera.top_y..camera.bottom_y {
             for x in camera.left_x..camera.right_x {
@@ -48,7 +48,7 @@ impl Map {
                 }
             }
         }
-    }
+    }*/
 
     pub fn in_bounds (&self, Point{x,y}: Point) -> bool {
         x >= 0 && x < SCREEN_WIDTH
